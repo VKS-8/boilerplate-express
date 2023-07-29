@@ -1,42 +1,10 @@
 let express = require('express');
 let app = express();
 
-console.log("Hello World");
+app.get('/', function(res, req) {
+  res.send("Hello Express");
+});
 
+// console.log("Hello World")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- module.exports = app;
+module.exports = app;
